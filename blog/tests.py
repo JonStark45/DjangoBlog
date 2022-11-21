@@ -64,7 +64,7 @@ class BlogTests(TestCase):
             reverse("post_edit", args="1"),
             {
                 "title": "Updated title",
-                "body": "updated text",
+                "body": "Updated text",
             },
         )
         self.assertEqual(response.status_code, 302)
